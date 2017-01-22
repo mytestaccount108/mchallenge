@@ -23,7 +23,9 @@ The following API is implemented:
 Start up server workers with:
 
     ./challenge/bin/challenge-executable
-    
+
+Please setup virtualenv https://virtualenv.pypa.io/en/stable/ before continuing.
+
 For development, build with:
     
     # Go into challenge directory if not already there
@@ -51,7 +53,10 @@ Run linting with (after activating virtual environment):
 Run coverage with (after activating virtual environment):
   
     python -m py.test --cov-config .coveragerc --cov=. tests/
-  
+    
+Generating a PEX executable for platform (OSX, Linux):
+
+    pex -r challenge/requirements.txt -c gunicorn -o challenge/bin/gunicorn.pex
 
 ## Implementation ##
 
