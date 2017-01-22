@@ -33,7 +33,7 @@ For development, build with:
     # For development
     pip install -r requirements.txt
     # For testing, linting, and coverage
-    pip install -r requirements-test.txt
+    pip install -r test-requirements.txt
 
 Run tests with:
     
