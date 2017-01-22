@@ -35,20 +35,20 @@ For development, build with:
     # For testing, linting, and coverage
     pip install -r test-requirements.txt
 
-Run tests with:
+Run tests with (after activating virtual environment):
     
     # Go into challenge directory if not already there
     cd challenge
-    # Start up development server
+    # Start up development server in another screen/window.
     python webapp.py
-    # Run unit and integration tests
+    # In another screen/window, run unit and integration tests
     python -m py.test tests/
 
-Run linting with:
-
+Run linting with (after activating virtual environment):
+    
     flake8
 
-Run coverage with:
+Run coverage with (after activating virtual environment):
   
     python -m py.test --cov-config .coveragerc --cov=. tests/
   
