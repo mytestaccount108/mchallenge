@@ -69,7 +69,7 @@ Implementation relies on the following technologies:
 Be able to be restarted
 
 * There is no dependency on in-memory caching so restarting individual workers when nothing is being written would not cause data loss.
-* Gunicorn itself can be configured to restart its workers upon exception or upon timeout. A supervisor can also be run to create restart process upon crash.
+* Gunicorn itself can be configured to restart its workers upon exception or upon timeout. A supervisor can also be run to restart process upon crash.
 Conditions to be careful with include:
 * Disk leakage could occur when a request fails without completing and is restarted. We make a complexity tradeoff to intentionally drop partially failed requests and to have the client retry.  
 We may need to consider making a periodic, scheduled pass to examine disk for files that do not belong to a finished request.
