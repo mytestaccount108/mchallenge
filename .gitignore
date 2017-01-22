@@ -1,6 +1,6 @@
 *.pyc
 *.swp
-venv/*
-buildvenv/*
+challenge/venv/*
+challenge/buildvenv/*
 *.pyc
 *.dmg
