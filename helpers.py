@@ -17,7 +17,7 @@ def get_storage_path(test=False):
 
 
 def get_executable_path():
-    """ Get the storage path where the blobs will be held.
+    """ Get the path for the executable.
     :returns: An absolute path.
     :rtype: str
     """
@@ -27,6 +27,8 @@ def get_executable_path():
 
 def has_enough_space():
     """ Reject requests when diskspace left is less than 5%
+    # TODO: This needs to be more complex where we consider space left
+    on mount and space of BLOB being inserted.
     :returns: Whether you should still take request.
     :rtype: bool
     """

@@ -81,9 +81,7 @@ def _delete_blob(location):
 
 @app.route('/store/<location>', methods=['POST'])
 def post_blob(location):
-    """ Create a new blob at the location.
-    # TODO: If file already exist, we need to throw an exception.
-    """
+    """ Create a new blob at the location. """
     if not has_enough_space():
         abort(507, 'Rejecting request due to limited disk space.')
     if os.path.isfile(app.config['UPLOAD_FOLDER'] + '/' + location):
