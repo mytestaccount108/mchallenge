@@ -9,11 +9,11 @@ def get_storage_path(test=False):
     :returns: An absolute path.
     :rtype: str
     """
-    cwd = os.getcwd()
+    path = os.path.dirname(os.path.realpath(__file__))
     if test:
-        return os.path.join(cwd, 'test_storage')
+        return os.path.join(path, 'test_storage')
     else:
-        return os.path.join(cwd, 'storage')
+        return os.path.join(path, 'storage')
 
 
 def get_executable_path():
