@@ -1,0 +1,2 @@
+# TODO: Move this over to using PEX wrapper for webapp itself with entrypoint. Meantime, use gunicorn pex.
+bin/gunicorn.pex -w 4 -b 0.0.0.0:7777 webapp:app
