@@ -25,7 +25,9 @@ Start up server workers with:
     ./challenge/bin/challenge-executable
     
 For development, build with:
-
+    
+    # Go into challenge directory if not already there
+    cd challenge
     virtualenv buildvenv
     source buildvenv/bin/activate
     # For development
@@ -35,6 +37,8 @@ For development, build with:
 
 Run tests with:
     
+    # Go into challenge directory if not already there
+    cd challenge
     # Start up development server
     python webapp.py
     # Run unit and integration tests
