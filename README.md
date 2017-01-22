@@ -10,6 +10,8 @@ Server was developed on an OSX machine with
   * Python 2.7
   
 and tested against Ubuntu 16.04.
+
+If using OSX, change `challenge-executable` to use `gunicorn_osx.pex` by editing the file.
   
 The following API is implemented:
 
